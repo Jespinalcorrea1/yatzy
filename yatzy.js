@@ -104,50 +104,76 @@ var score614 = Number(document.getElementById("score614").value);
 // Calcular el total de la primera fila
 var total1 = score11 + score12 + score13 + score14 + score15 + score16;  // Agrega más sumas para los demás números
 document.getElementById("total1").value = total1;
-var total2 = score21 + score22 + score23 + score24 + score25 + score26;  // Agrega más sumas para los demás números
-document.getElementById("total2").value = total2;
-var total3 = score31 + score32 + score33 + score34 + score35 + score36;  // Agrega más sumas para los demás números
-document.getElementById("total3").value = total3;
-var total4 = score41 + score42 + score43 + score44 + score45 + score46;  // Agrega más sumas para los demás números
-document.getElementById("total4").value = total4;
-var total5 = score51 + score52 + score53 + score54 + score55 + score56;  // Agrega más sumas para los demás números
-document.getElementById("total5").value = total5;
-var total6 = score61 + score62 + score63 + score64 + score65 + score66;  // Agrega más sumas para los demás números
-document.getElementById("total6").value = total6;
-
-// Calcular la bonificación de bonus
+// Calcular la bonificación
 var bonus1 = total1 >= 63 ? 25 : 0;
 document.getElementById("bonus1").value = bonus1;
-var bonus2 = total2 >= 63 ? 25 : 0;
-document.getElementById("bonus2").value = bonus2;
-var bonus3 = total3 >= 63 ? 25 : 0;
-document.getElementById("bonus3").value = bonus3;
-var bonus4 = total4 >= 63 ? 25 : 0;
-document.getElementById("bonus4").value = bonus4;
-var bonus5 = total5 >= 63 ? 25 : 0;
-document.getElementById("bonus5").value = bonus5;
-var bonus6 = total6 >= 63 ? 25 : 0;
-document.getElementById("bonus6").value = bonus6;
-
+// Calcular el total final
+var finalTotal1 = total1 + bonus1 + score17+ score172 + score18 + score19 + score110 + score111 + score112 + score113 + score114;
+document.getElementById("finalTotal1").value = finalTotal1;
 
 // Sumar todos los valores de los inputs y mostrar el resultado en el último input deshabilitado
 //var sumaTotal = score11 + score12 /* Agrega más sumas para los demás números */;
 // document.getElementById("totalGeneral").value = sumaTotal;
 
+
+var total2 = score21 + score22 + score23 + score24 + score25 + score26;  // Agrega más sumas para los demás números
+document.getElementById("total2").value = total2;
+// Calcular la bonificación
+var bonus2 = total2 >= 63 ? 25 : 0;
+document.getElementById("bonus2").value = bonus2;
 // Calcular el total final
-var finalTotal1 = total1 + bonus1 + score17+ score172 + score18 + score19 + score110 + score111 + score112 + score113 + score114;
-document.getElementById("finalTotal1").value = finalTotal1;
 var finalTotal2 = total2 + bonus2 + score27 + score272 + score28 + score29 + score210 + score211 + score212 + score213 + score214;
 document.getElementById("finalTotal2").value = finalTotal2;
+
+
+var total3 = score31 + score32 + score33 + score34 + score35 + score36;  // Agrega más sumas para los demás números
+document.getElementById("total3").value = total3;
+// Calcular la bonificación
+var bonus3 = total3 >= 63 ? 25 : 0;
+document.getElementById("bonus3").value = bonus3;
+// Calcular el total final
 var finalTotal3 = total3 + bonus3 + score37 + score372 + score38 + score39 + score310 + score311 + score312 + score313 + score314;
 document.getElementById("finalTotal3").value = finalTotal3;
+
+
+
+var total4 = score41 + score42 + score43 + score44 + score45 + score46;  // Agrega más sumas para los demás números
+document.getElementById("total4").value = total4;
+// Calcular la bonificación
+var bonus4 = total4 >= 63 ? 25 : 0;
+document.getElementById("bonus4").value = bonus4;
+// Calcular el total final
 var finalTotal4 = total4 + bonus4 + score47 + score472 + score48 + score49 + score410 + score411 + score412 + score413 + score414;
 document.getElementById("finalTotal4").value = finalTotal4;
+
+
+
+var total5 = score51 + score52 + score53 + score54 + score55 + score56;  // Agrega más sumas para los demás números
+document.getElementById("total5").value = total5;
+// Calcular la bonificación
+var bonus5 = total5 >= 63 ? 25 : 0;
+document.getElementById("bonus5").value = bonus5;
+// Calcular el total final
 var finalTotal5 = total5 + bonus5 + score57 + score572 + score58 + score59 + score510 + score511 + score512 + score513 + score514;
 document.getElementById("finalTotal5").value = finalTotal5;
+
+
+
+var total6 = score61 + score62 + score63 + score64 + score65 + score66;  // Agrega más sumas para los demás números
+document.getElementById("total6").value = total6;
+// Calcular la bonificación
+var bonus6 = total6 >= 63 ? 25 : 0;
+document.getElementById("bonus6").value = bonus6;
+// Calcular el total final
 var finalTotal6 = total6 + bonus6 + score67 + score672 + score68 + score69 + score610 + score611 + score612 + score613 + score614;
 document.getElementById("finalTotal6").value = finalTotal6;
+}
 
+function iniciarSiguienteJuego() {
+    // Puedes agregar aquí la lógica para reiniciar el siguiente juego.
+    
+    // Por ejemplo, cambia automáticamente la posición de los jugadores.
+    location.reload();
 
 }
 
@@ -184,12 +210,7 @@ function reiniciarPosiciones() {
             rows[i].classList.remove('ganador');
         }
     }
-
-    // Mostrar al ganador en la ventana emergente
-    document.getElementById('ganadorNombre').textContent = ganadorNombre;
-    openForm();
 }
-
 // Función para abrir la ventana emergente
 function openForm() {
     document.getElementById("myForm").style.display = "block";
