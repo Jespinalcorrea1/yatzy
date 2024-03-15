@@ -1,0 +1,131 @@
+body {
+    font-size: 1rem;
+    padding: 2em;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4; /* Cambia el color de fondo del cuerpo de la página */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    /* Otros estilos específicos para móviles */
+}
+
+/* Estilos para dispositivos medianos (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos específicos para tablets */
+}
+
+/* Estilos para dispositivos grandes (escritorios) */
+@media (min-width: 1025px) {
+    /* Estilos específicos para escritorios */
+}
+
+
+table {
+    margin: 60px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff; /* Cambia el color de fondo de la tabla */
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15); /* Añade una sombra a la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Cambia el color del borde de las celdas */
+    padding: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+th {
+    background-color: #4CAF50; /* Cambia el color de fondo de las celdas del encabezado */
+    color: white; /* Cambia el color del texto de las celdas del encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cambia el color de fondo de las filas pares */
+}
+
+input {
+    width: 60px;
+    border: none; /* Elimina el borde del input */
+    text-align: center; /* Centra el texto del input */
+    padding: 5px; /* Añade un padding al input */
+}
+
+button {
+    background-color: #4CAF50; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Añade un padding al botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Añade bordes redondeados al botón */
+}
+
+
+h1 {
+    color: #4CAF50; /* Cambia el color del texto */
+    text-shadow: 2px 2px #6edc69; /* Añade una sombra al texto */
+    font-size: 4em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+img {
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    border: 5px solid rgba(214, 104, 36, 0.671); /* Agrega un borde a la imagen */
+    box-shadow: 0px 0px 10px #6edc69; /* Agrega una sombra a la imagen */
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el botón de abrir */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* Estilos para la ventana emergente */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Estilos para el contenido de la ventana emergente */
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Estilos para el botón de cerrar */
+.form-container .cancel {
+    background-color: red;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatzy Scorekeeper</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="yatzy.js"></script>
+
+</head>
+<body>
+    <h1 class="centered">!!YATZY!!</h1>
+    <img class="centered" src="yatzypic.jpeg" height="300">
+    <table id="yatzyTable">
+        <tr>
+            <th>Spieler</th>
+            <th><input type="text" id="playerName1" placeholder="Spieler 1"></th>
+            <th><input type="text" id="playerName2" placeholder="Spieler 2"></th>
+            <th><input type="text" id="playerName3" placeholder="Spieler 3"></th>
+            <th><input type="text" id="playerName4" placeholder="Spieler 4"></th>
+            <th><input type="text" id="playerName5" placeholder="Spieler 5"></th>
+            <th><input type="text" id="playerName6" placeholder="Spieler 6"></th>
+
+        </tr>
+
+        <tr>
+            <td>Einer</td>
+            <td><input type="number" id="score11" min="0" ></td>
+            <td><input type="number" id="score21" min="0" ></td>
+            <td><input type="number" id="score31" min="0" ></td>
+            <td><input type="number" id="score41" min="0" ></td>
+            <td><input type="number" id="score51" min="0" ></td>
+            <td><input type="number" id="score61" min="0" ></td>
+            
+        </tr>
+        <tr>
+            <td>Zweier</td>
+            <td><input type="number" id="score12" min="0" ></td>
+            <td><input type="number" id="score22" min="0" ></td>
+            <td><input type="number" id="score32" min="0" ></td>
+            <td><input type="number" id="score42" min="0" ></td>
+            <td><input type="number" id="score52" min="0" ></td>
+            <td><input type="number" id="score62" min="0" ></td>
+            
+        <tr>
+            <td>Dreier</td>
+            <td><input type="number" id="score13" min="0" ></td>
+            <td><input type="number" id="score23" min="0" ></td>
+            <td><input type="number" id="score33" min="0" ></td>
+            <td><input type="number" id="score43" min="0" ></td>
+            <td><input type="number" id="score53" min="0" ></td>
+            <td><input type="number" id="score63" min="0" ></td>
+            
+        </tr>
+        <tr>
+            <td>Vierer</td>
+            <td><input type="number" id="score14" min="0" ></td>
+            <td><input type="number" id="score24" min="0" ></td>
+            <td><input type="number" id="score34" min="0" ></td>
+            <td><input type="number" id="score44" min="0" ></td>
+            <td><input type="number" id="score54" min="0" ></td>
+            <td><input type="number" id="score64" min="0" ></td>
+            
+        </tr>
+        <tr>
+            <td>Fünfer</td>
+            <td><input type="number" id="score15" min="0" ></td>
+            <td><input type="number" id="score25" min="0" ></td>
+            <td><input type="number" id="score35" min="0" ></td>
+            <td><input type="number" id="score45" min="0" ></td>
+            <td><input type="number" id="score55" min="0" ></td>
+            <td><input type="number" id="score65" min="0" ></td>
+            
+        </tr>
+        <tr>
+            <td>Secher</td>
+            <td><input type="number" id="score16" min="0" ></td>
+            <td><input type="number" id="score26" min="0" ></td>
+            <td><input type="number" id="score36" min="0" ></td>
+            <td><input type="number" id="score46" min="0" ></td>
+            <td><input type="number" id="score56" min="0" ></td>
+            <td><input type="number" id="score66" min="0" ></td>
+            
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td><input type="text" id="total1" disabled></td>
+            <td><input type="text" id="total2" disabled></td>
+            <td><input type="text" id="total3" disabled></td>
+            <td><input type="text" id="total4" disabled></td>
+            <td><input type="text" id="total5" disabled></td>
+            <td><input type="text" id="total6" disabled></td>
+
+        </tr>
+        <tr>
+            <td>Bonus</td>
+            <td><input type="text" id="bonus1" disabled></td>
+            <td><input type="text" id="bonus2" disabled></td>
+            <td><input type="text" id="bonus3" disabled></td>
+            <td><input type="text" id="bonus4" disabled></td>
+            <td><input type="text" id="bonus5" disabled></td>
+            <td><input type="text" id="bonus6" disabled></td>
+
+        </tr>
+        <tr>
+            <td>1 Paar</td>
+            <td><input type="number" id="score17" min="0" ></td>
+            <td><input type="number" id="score27" min="0" ></td>
+            <td><input type="number" id="score37" min="0" ></td>
+            <td><input type="number" id="score47" min="0" ></td>
+            <td><input type="number" id="score57" min="0" ></td>
+            <td><input type="number" id="score67" min="0" ></td>
+        </tr>
+        <tr>
+            <td>2 Paar</td>
+            <td><input type="number" id="score172" min="0" ></td>
+            <td><input type="number" id="score272" min="0" ></td>
+            <td><input type="number" id="score372" min="0" ></td>
+            <td><input type="number" id="score472" min="0" ></td>
+            <td><input type="number" id="score572" min="0" ></td>
+            <td><input type="number" id="score672" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Drei Gleiche</td>
+            <td><input type="number" id="score18" min="0" ></td>
+            <td><input type="number" id="score28" min="0" ></td>
+            <td><input type="number" id="score38" min="0" ></td>
+            <td><input type="number" id="score48" min="0" ></td>
+            <td><input type="number" id="score58" min="0" ></td>
+            <td><input type="number" id="score68" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Vier Gleiche</td>
+            <td><input type="number" id="score19" min="0" ></td>
+            <td><input type="number" id="score29" min="0" ></td>
+            <td><input type="number" id="score39" min="0" ></td>
+            <td><input type="number" id="score49" min="0" ></td>
+            <td><input type="number" id="score59" min="0" ></td>
+            <td><input type="number" id="score69" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Kleine Strasse</td>
+            <td><input type="number" id="score110" min="0" ></td>
+            <td><input type="number" id="score210" min="0" ></td>
+            <td><input type="number" id="score310" min="0" ></td>
+            <td><input type="number" id="score410" min="0" ></td>
+            <td><input type="number" id="score510" min="0" ></td>
+            <td><input type="number" id="score610" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Gosse Strasse</td>
+            <td><input type="number" id="score111" min="0" ></td>
+            <td><input type="number" id="score211" min="0" ></td>
+            <td><input type="number" id="score311" min="0" ></td>
+            <td><input type="number" id="score411" min="0" ></td>
+            <td><input type="number" id="score511" min="0" ></td>
+            <td><input type="number" id="score611" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Volles Haus</td>
+            <td><input type="number" id="score112" min="0" ></td>
+            <td><input type="number" id="score212" min="0" ></td>
+            <td><input type="number" id="score312" min="0" ></td>
+            <td><input type="number" id="score412" min="0" ></td>
+            <td><input type="number" id="score512" min="0" ></td>
+            <td><input type="number" id="score612" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Chance</td>
+            <td><input type="number" id="score113" min="0" ></td>
+            <td><input type="number" id="score213" min="0" ></td>
+            <td><input type="number" id="score313" min="0" ></td>
+            <td><input type="number" id="score413" min="0" ></td>
+            <td><input type="number" id="score513" min="0" ></td>
+            <td><input type="number" id="score613" min="0" ></td>
+        </tr>
+        <tr>
+            <td>YATZY</td>
+            <td><input type="number" id="score114" min="0" ></td>
+            <td><input type="number" id="score214" min="0" ></td>
+            <td><input type="number" id="score314" min="0" ></td>
+            <td><input type="number" id="score414" min="0" ></td>
+            <td><input type="number" id="score514" min="0" ></td>
+            <td><input type="number" id="score614" min="0" ></td>
+        </tr>
+        <tr>
+            <td>Total General</td>
+            <td><input type="text" id="finalTotal1" disabled></td>
+            <td><input type="text" id="finalTotal2" disabled></td>
+            <td><input type="text" id="finalTotal3" disabled></td>
+            <td><input type="text" id="finalTotal4" disabled></td>
+            <td><input type="text" id="finalTotal5" disabled></td>
+            <td><input type="text" id="finalTotal6" disabled></td>
+        </tr>
+        <!-- Puedes agregar más filas según la cantidad de jugadores -->
+
+    </table>
+  
+    <button onclick="calcularPuntuacion()">berechnen</button>
+
+<!-- Ventana emergente (modal) -->
+<div class="form-popup" id="myForm">
+    <div class="form-container">
+        <h1>Der Gewinner ist::</h1>
+        <p id="ganadorNombre"></p>
+        <button type="button" class="btn cancel" onclick="closeForm()">Schließen</button>
+    </div>
+</div>
+    <!--- <input type="button" value="berechnen" onclick="calcularPuntuacion()"/> -->
+    <br>
+    <br>
+    <br>
+    <button onclick="iniciarSiguienteJuego()">Nächstes Spiel</button>
+    
+    <footer>
+        <p>Published by J.Espinal<time datetime="2024-02-18">2024-02-18</time></p>
+    </footer>
+</body>
+</html>
