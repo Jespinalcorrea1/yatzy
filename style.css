@@ -29,8 +29,12 @@ body {
     /* Estilos específicos para escritorios */
 }
 
-.container {
+.containerpp {
     display: flex;
+}
+.content {
+    flex: 1;
+    padding: 20px;
 }
 table {
     margin: 60px auto;
