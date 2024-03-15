@@ -149,39 +149,6 @@ var finalTotal6 = total6 + bonus6 + score67 + score672 + score68 + score69 + sco
 document.getElementById("finalTotal6").value = finalTotal6;
 
 
-
-
-
-
-
-
-
-// Calcular el total final
-
-
-
-
-
-// Calcular la bonificación
-
-// Calcular el total final
-
-
-
-
-
-// Calcular la bonificación
-
-// Calcular el total final
-
-
-
-
-
-// Calcular la bonificación
-
-// Calcular el total final
-
 }
 
 function iniciarSiguienteJuego() {
