@@ -220,6 +220,6 @@ function closeForm() {
 
  // Función para mostrar las reglas al hacer clic en el botón
  document.getElementById("mostrarReglas").addEventListener("click", function() {
-    const sidebar = document.querySelector(".sidebar");
-    sidebar.style.display = "block"; // Cambia "none" a "block" para mostrar las reglas
+    const reglasbox = document.querySelector(".reglasbox");
+    reglasbox.style.display = "block"; // Cambia "none" a "block" para mostrar las reglas
 });

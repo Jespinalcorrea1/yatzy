@@ -147,13 +147,15 @@ img {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
-.sidebar {
+.reglasbox {
+    text-align: justify;
+    text-justify: inter-word;
     flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     min-width: 100px; /* Ancho mínimo para el sidebar */
 }
-.sidebar {
+.reglasbox {
     display: none;
 }
