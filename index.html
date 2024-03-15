@@ -10,11 +10,43 @@
 </head>
 <body>
     <h1 class="centered">!!YATZY!!</h1>
-    <div>
-    <img class="centered" src="yatzypic.jpeg" height="300">
-    </div>
     <div class="containerpp">
-        <div class="content">
+        <div class="reglas-container">
+            <h2>Yatzy Spielregeln</h2>
+            
+                <div class="sidebar">
+                <!-- Inserta aquí las reglas del juego -->
+                <p>
+        <h3>Spielziel:</h3>
+        
+        Das Ziel ist es, verschiedene Kombinationen mit den 5 Würfeln zu erzielen, um so viele Punkte wie möglich zu sammeln.
+        
+        <h3>Spielablauf:</h3>
+        
+        Das Spiel eignet sich für 2 bis 6 Spieler, ab einem Alter von 8 Jahren.
+        Gespielt wird mit 5 Würfeln und einem Punkteblock.
+        Jeder Spieler hat drei Würfe pro Runde.
+        Der Spieler kann beliebig viele Würfel als “fertig” markieren oder mit dem nächsten Wurf erneut würfeln.
+        Die Kombinationen werden nacheinander verarbeitet.
+        Kann ein Spieler in einer Runde keine Kombination vervollständigen, muss er eine auswählen und streichen.
+        Die Kombinationen umfassen:
+            1 Paar: Zwei Würfel mit demselben Wert (z. B. 3 + 3 = 6 Punkte).
+            2 Paare: Zweimal 2 Würfel mit demselben Wert (z. B. 4 + 4 und 5 + 5 = 18 Punkte).
+            Dreierpasch: Drei Würfel mit demselben Wert (z. B. 5 + 5 + 5 = 15 Punkte).
+            Viererpasch: Vier Würfel mit demselben Wert (z. B. 1 + 1 + 1 + 1 = 4 Punkte).
+            Kleine Straße: 1 + 2 + 3 + 4 + 5 (15 Punkte).
+            Große Straße: 2 + 3 + 4 + 5 + 6 (20 Punkte).
+            Full House: 1 Paar und 3 Würfel mit demselben Wert (z. B. 3 + 3, 5 + 5 + 5 = 21 Punkte).
+            Chance / Bonus: Kann mit der Punktzahl eines beliebigen Wurfs vervollständigt werden.
+            Yatzy: 5 Würfel mit demselben Wert = 50 Punkte.
+        </p>
+                </div>
+            </div>
+    <div>
+    <img class="sidebar" src="yatzypic.jpeg" height="300">
+    </div>
+    </div>
+        <div class="table-container">
     <table id="yatzyTable">
         <tr>
             <th>Spieler</th>
@@ -200,38 +232,7 @@
 
     </table>
 </div>
-    <div class="reglas-container">
-    <h2>Yatzy Spielregeln</h2>
-    
-        <div class="sidebar">
-        <!-- Inserta aquí las reglas del juego -->
-        <p>
-<h3>Spielziel:</h3>
 
-Das Ziel ist es, verschiedene Kombinationen mit den 5 Würfeln zu erzielen, um so viele Punkte wie möglich zu sammeln.
-
-<h3>Spielablauf:</h3>
-
-Das Spiel eignet sich für 2 bis 6 Spieler, ab einem Alter von 8 Jahren.
-Gespielt wird mit 5 Würfeln und einem Punkteblock.
-Jeder Spieler hat drei Würfe pro Runde.
-Der Spieler kann beliebig viele Würfel als “fertig” markieren oder mit dem nächsten Wurf erneut würfeln.
-Die Kombinationen werden nacheinander verarbeitet.
-Kann ein Spieler in einer Runde keine Kombination vervollständigen, muss er eine auswählen und streichen.
-Die Kombinationen umfassen:
-    1 Paar: Zwei Würfel mit demselben Wert (z. B. 3 + 3 = 6 Punkte).
-    2 Paare: Zweimal 2 Würfel mit demselben Wert (z. B. 4 + 4 und 5 + 5 = 18 Punkte).
-    Dreierpasch: Drei Würfel mit demselben Wert (z. B. 5 + 5 + 5 = 15 Punkte).
-    Viererpasch: Vier Würfel mit demselben Wert (z. B. 1 + 1 + 1 + 1 = 4 Punkte).
-    Kleine Straße: 1 + 2 + 3 + 4 + 5 (15 Punkte).
-    Große Straße: 2 + 3 + 4 + 5 + 6 (20 Punkte).
-    Full House: 1 Paar und 3 Würfel mit demselben Wert (z. B. 3 + 3, 5 + 5 + 5 = 21 Punkte).
-    Chance / Bonus: Kann mit der Punktzahl eines beliebigen Wurfs vervollständigt werden.
-    Yatzy: 5 Würfel mit demselben Wert = 50 Punkte.
-</p>
-    </div>
-    </div>
-</div>
     <button onclick="calcularPuntuacion()">berechnen</button>
 
 <!-- Ventana emergente (modal) -->
