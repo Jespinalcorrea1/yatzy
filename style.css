@@ -29,7 +29,9 @@ body {
     /* Estilos específicos para escritorios */
 }
 
-
+.container {
+    display: flex;
+}
 table {
     margin: 60px auto;
     border-collapse: collapse;
